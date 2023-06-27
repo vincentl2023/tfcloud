@@ -1,4 +1,6 @@
-
+provider "aws" {
+    region = "us-east-2"
+}
 data "aws_security_group" "rds-ec2-7" {
   name = "rds-ec2-7
 }
