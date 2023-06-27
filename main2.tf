@@ -1,6 +1,7 @@
 
 data "aws_security_group" "rds-ec2-7" {
   name = "rds-ec2-7
+}
 
 data "aws_security_group" "rds-ec2-8" {
   name = "rds-ec2-8"
