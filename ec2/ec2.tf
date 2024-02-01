@@ -9,8 +9,7 @@ resource "aws_instance" "web" {
     Name = "TNonProductionWebServer"
     "aws:autoscaling:group"  = "DEMOasg"  # Add Auto Scaling Group name as a tag
   }
-  }
 
   iam_instance_profile = "EC2CodeDeploy"
-
 }
+
