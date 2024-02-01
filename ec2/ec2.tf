@@ -26,4 +26,5 @@ resource "aws_autoscaling_group" "web" {
     key                 = "Name"
     value               = "TNonProductionWebServer"
     propagate_at_launch = true
-  }}
+  }
+}
