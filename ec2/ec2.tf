@@ -4,7 +4,7 @@ resource "aws_instance" "web" {
   security_groups  = ["default"]
   user_data        = file("server-script.sh")
   tags = {
-    Name = "Production Refund Rangers"
+    Name = "TNonProductionWebServer"
   }
 
   iam_instance_profile = "EC2CodeDeploy"
