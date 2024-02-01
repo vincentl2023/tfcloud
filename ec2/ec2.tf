@@ -7,6 +7,8 @@ resource "aws_instance" "web" {
   user_data        = file("server-script.sh")
   tags = {
     Name = "TNonProductionWebServer"
+    "aws:autoscaling:group"  = "DEMOasg"  # Add Auto Scaling Group name as a tag
+  }
   }
 
   iam_instance_profile = "EC2CodeDeploy"
