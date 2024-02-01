@@ -32,8 +32,8 @@ resource "aws_db_instance" "myRDS" {
   availability_zone = "us-east-2c"
 }
 
-module "ec2server" {
-    source = "./ec2"
+# module "ec2server" {
+#   source = "./ec2"
     
 }
 
