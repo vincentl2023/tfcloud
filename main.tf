@@ -34,6 +34,6 @@ resource "aws_db_instance" "myRDS" {
 
 module "ec2server" {
     source = "./ec2"
-    instance_name = "TNonProductionWebServer"
+    
 }
 
